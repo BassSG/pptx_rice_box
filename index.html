@@ -6,7 +6,7 @@
     <title>Rice Box Packaging Options</title>
     <meta
       name="description"
-      content="พรีวิวสไลด์เลือกบรรจุภัณฑ์ข้าวกล่องออนไลน์ พร้อมดาวน์โหลดไฟล์ PowerPoint"
+      content="พรีวิวสไลด์เลือกกล่องข้าวออนไลน์ สำหรับเมนูกะเพราและห่อหมกราดข้าว พร้อมราคาแพ็กเกจที่จับต้องได้"
     />
     <style>
       :root {
@@ -19,6 +19,7 @@
         --green: #0e6e4c;
         --gold: #f5d36b;
         --blue: #2d6f8f;
+        --orange: #c95d2e;
       }
 
       * {
@@ -48,13 +49,19 @@
         padding: 28px clamp(18px, 5vw, 64px);
       }
 
+      .topbar,
+      .hero,
+      main {
+        max-width: 1180px;
+        margin-inline: auto;
+      }
+
       .topbar {
         display: flex;
         align-items: center;
         justify-content: space-between;
         gap: 18px;
-        max-width: 1180px;
-        margin: 0 auto 22px;
+        margin-bottom: 22px;
       }
 
       .brand {
@@ -72,10 +79,8 @@
       }
 
       .hero {
-        max-width: 1180px;
-        margin: 0 auto;
         display: grid;
-        grid-template-columns: 1.25fr 0.75fr;
+        grid-template-columns: 1.2fr 0.8fr;
         gap: 34px;
         align-items: end;
       }
@@ -83,14 +88,14 @@
       h1 {
         margin: 0;
         font-family: "Leelawadee UI", Tahoma, system-ui, sans-serif;
-        font-size: clamp(36px, 6vw, 68px);
+        font-size: clamp(36px, 6vw, 66px);
         line-height: 1.08;
-        max-width: 820px;
+        max-width: 830px;
       }
 
       .hero p {
         margin: 20px 0 0;
-        max-width: 690px;
+        max-width: 720px;
         color: #e5f0df;
         font-size: clamp(16px, 2vw, 20px);
         line-height: 1.7;
@@ -123,9 +128,7 @@
       }
 
       main {
-        max-width: 1180px;
         width: 100%;
-        margin: 0 auto;
         padding: 34px clamp(18px, 5vw, 64px) 52px;
       }
 
@@ -204,6 +207,14 @@
         color: var(--green);
       }
 
+      .note:nth-child(2) strong {
+        color: var(--blue);
+      }
+
+      .note:nth-child(3) strong {
+        color: var(--orange);
+      }
+
       .note p {
         margin: 0;
         color: var(--muted);
@@ -241,20 +252,20 @@
         </div>
         <section class="hero">
           <div>
-            <h1>ตรวจสไลด์กล่องข้าวออนไลน์บนเว็บ</h1>
+            <h1>ตรวจสไลด์กล่องข้าวสำหรับกะเพราและห่อหมก</h1>
             <p>
-              พรีวิว PowerPoint เรื่องบรรจุภัณฑ์ข้าวกล่อง พร้อมราคาเฉลี่ยต่อใบ
-              สูตรคุมต้นทุน และคำแนะนำสำหรับเริ่มขายออนไลน์
+              พรีวิว PowerPoint เวอร์ชันเพิ่มเมนูกะเพราราดข้าวและห่อหมกราดข้าว พร้อมตัวเลือกกล่อง ราคาเฉลี่ย
+              และช่วงราคาที่ควรบวกเข้าเมนู เพื่อให้ขายออนไลน์แล้วไม่แบกต้นทุนแพ็กเกจเอง
             </p>
           </div>
           <div class="stats">
             <div class="stat">
-              <strong>13</strong>
-              <span>สไลด์พร้อมรูปสินค้าและราคา</span>
+              <strong>17</strong>
+              <span>สไลด์พร้อมรูปเมนู กล่องสินค้า ราคา และคำแนะนำการใช้งานจริง</span>
             </div>
             <div class="stat">
-              <strong>3.30+</strong>
-              <span>บาท/ใบ สำหรับตัวเลือก PP เริ่มต้น</span>
+              <strong>6-13</strong>
+              <span>บาท/ออร์เดอร์ เป็นช่วงค่าแพ็กเต็มที่ควรเผื่อในเมนูกะเพราและห่อหมก</span>
             </div>
           </div>
         </section>
@@ -286,16 +297,16 @@
 
         <section class="notes" aria-label="Deck summary">
           <article class="note">
-            <strong>ตัวเลือกแนะนำ</strong>
-            <p>เริ่มจาก PP 750 ml 2 ช่องเป็นกล่องหลัก แล้วใช้คราฟท์หรือชานอ้อยกับเมนูราคาสูงขึ้น</p>
+            <strong>กะเพราราดข้าว</strong>
+            <p>แนะนำ PP 750 ml 2 ช่องเป็นกล่องหลัก โดยเฉพาะเมนูไข่ดาว เพื่อแยกไข่ น้ำมัน และเครื่องเคียงให้หน้ากล่องยังดูดี</p>
           </article>
           <article class="note">
-            <strong>ต้นทุนที่ควรเผื่อ</strong>
-            <p>คิดเป็นแพ็กเต็มต่อออร์เดอร์ เช่น กล่อง ถ้วยน้ำจิ้ม ช้อน ถุง และสติกเกอร์</p>
+            <strong>ห่อหมกราดข้าว</strong>
+            <p>เน้นฝาแน่น คุมไอน้ำ และแยกซอสหรือหน้าห่อหมกเมื่อเนื้อแฉะ เหมาะกับต้นทุนแพ็กประมาณ 7.5-9.5 บาทต่อออร์เดอร์</p>
           </article>
           <article class="note">
-            <strong>หมายเหตุราคา</strong>
-            <p>ข้อมูลราคาเช็กเมื่อ 15 มิถุนายน 2026 ควรตรวจซ้ำก่อนซื้อยกลังจริง</p>
+            <strong>ตัวเลือกพรีเมียม</strong>
+            <p>คราฟท์หรือชานอ้อยช่วยให้ภาพเมนูดูแพงขึ้น แต่ควรใช้กับเมนู 89 บาทขึ้นไป หรือทำเป็นเซ็ตพิเศษเพื่อไม่ให้กำไรหาย</p>
           </article>
         </section>
       </main>
