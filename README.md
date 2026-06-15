@@ -6,6 +6,10 @@
 
 - [rice-box-packaging-options-th.pptx](./rice-box-packaging-options-th.pptx)
 
+## เปิดตรวจบนเว็บ
+
+- [GitHub Pages](https://basssg.github.io/pptx_rice_box/)
+
 ## เนื้อหาในสไลด์
 
 - เปรียบเทียบกล่อง PP, คราฟท์, ชานอ้อย, ฟอยล์, PET และโฟม

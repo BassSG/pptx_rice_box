@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Rice Box Packaging Options</title>
+    <meta
+      name="description"
+      content="พรีวิวสไลด์เลือกบรรจุภัณฑ์ข้าวกล่องออนไลน์ พร้อมดาวน์โหลดไฟล์ PowerPoint"
+    />
+    <style>
+      :root {
+        --ink: #10261c;
+        --text: #20201d;
+        --muted: #6f6a60;
+        --paper: #f8f2e7;
+        --surface: #fffdf7;
+        --line: #dccfbd;
+        --green: #0e6e4c;
+        --gold: #f5d36b;
+        --blue: #2d6f8f;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: Tahoma, "Leelawadee UI", system-ui, sans-serif;
+        background: var(--paper);
+        color: var(--text);
+      }
+
+      a {
+        color: inherit;
+      }
+
+      .shell {
+        min-height: 100vh;
+        display: grid;
+        grid-template-rows: auto 1fr;
+      }
+
+      header {
+        background: var(--ink);
+        color: white;
+        padding: 28px clamp(18px, 5vw, 64px);
+      }
+
+      .topbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 18px;
+        max-width: 1180px;
+        margin: 0 auto 22px;
+      }
+
+      .brand {
+        font-size: 13px;
+        letter-spacing: 0.08em;
+        font-weight: 700;
+        color: #c9ddbf;
+      }
+
+      .github-link {
+        color: #dcebd8;
+        font-size: 14px;
+        text-decoration: none;
+        border-bottom: 1px solid rgba(220, 235, 216, 0.55);
+      }
+
+      .hero {
+        max-width: 1180px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1.25fr 0.75fr;
+        gap: 34px;
+        align-items: end;
+      }
+
+      h1 {
+        margin: 0;
+        font-family: "Leelawadee UI", Tahoma, system-ui, sans-serif;
+        font-size: clamp(36px, 6vw, 68px);
+        line-height: 1.08;
+        max-width: 820px;
+      }
+
+      .hero p {
+        margin: 20px 0 0;
+        max-width: 690px;
+        color: #e5f0df;
+        font-size: clamp(16px, 2vw, 20px);
+        line-height: 1.7;
+      }
+
+      .stats {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;
+      }
+
+      .stat {
+        border: 1px solid rgba(201, 221, 191, 0.24);
+        background: rgba(255, 255, 255, 0.06);
+        padding: 18px;
+      }
+
+      .stat strong {
+        display: block;
+        color: var(--gold);
+        font-size: 28px;
+        line-height: 1;
+        margin-bottom: 8px;
+      }
+
+      .stat span {
+        color: #c9ddbf;
+        font-size: 13px;
+        line-height: 1.45;
+      }
+
+      main {
+        max-width: 1180px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 34px clamp(18px, 5vw, 64px) 52px;
+      }
+
+      .actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-bottom: 22px;
+      }
+
+      .button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 44px;
+        padding: 0 18px;
+        border: 1px solid var(--green);
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 14px;
+        background: var(--green);
+        color: white;
+      }
+
+      .button.secondary {
+        background: var(--surface);
+        color: var(--green);
+      }
+
+      .viewer-card {
+        background: var(--surface);
+        border: 1px solid var(--line);
+      }
+
+      .viewer-header {
+        display: flex;
+        justify-content: space-between;
+        gap: 14px;
+        padding: 18px 20px;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .viewer-header strong {
+        font-size: 18px;
+      }
+
+      .viewer-header span {
+        color: var(--muted);
+        font-size: 13px;
+      }
+
+      .viewer {
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        border: 0;
+        display: block;
+        background: white;
+      }
+
+      .notes {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 14px;
+        margin-top: 22px;
+      }
+
+      .note {
+        border: 1px solid var(--line);
+        background: rgba(255, 253, 247, 0.72);
+        padding: 18px;
+      }
+
+      .note strong {
+        display: block;
+        margin-bottom: 8px;
+        color: var(--green);
+      }
+
+      .note p {
+        margin: 0;
+        color: var(--muted);
+        line-height: 1.65;
+        font-size: 14px;
+      }
+
+      @media (max-width: 820px) {
+        .hero,
+        .notes {
+          grid-template-columns: 1fr;
+        }
+
+        .stats {
+          max-width: 440px;
+        }
+
+        .viewer-header {
+          display: block;
+        }
+
+        .viewer-header span {
+          display: block;
+          margin-top: 6px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="shell">
+      <header>
+        <div class="topbar">
+          <div class="brand">RICE BOX ONLINE</div>
+          <a class="github-link" href="https://github.com/BassSG/pptx_rice_box">เปิดบน GitHub</a>
+        </div>
+        <section class="hero">
+          <div>
+            <h1>ตรวจสไลด์กล่องข้าวออนไลน์บนเว็บ</h1>
+            <p>
+              พรีวิว PowerPoint เรื่องบรรจุภัณฑ์ข้าวกล่อง พร้อมราคาเฉลี่ยต่อใบ
+              สูตรคุมต้นทุน และคำแนะนำสำหรับเริ่มขายออนไลน์
+            </p>
+          </div>
+          <div class="stats">
+            <div class="stat">
+              <strong>13</strong>
+              <span>สไลด์พร้อมรูปสินค้าและราคา</span>
+            </div>
+            <div class="stat">
+              <strong>3.30+</strong>
+              <span>บาท/ใบ สำหรับตัวเลือก PP เริ่มต้น</span>
+            </div>
+          </div>
+        </section>
+      </header>
+
+      <main>
+        <div class="actions">
+          <a class="button" href="./rice-box-packaging-options-th.pptx">ดาวน์โหลด PowerPoint</a>
+          <a
+            class="button secondary"
+            href="https://github.com/BassSG/pptx_rice_box/blob/main/rice-box-packaging-options-th.pptx"
+          >
+            ดูไฟล์บน GitHub
+          </a>
+        </div>
+
+        <section class="viewer-card" aria-label="PowerPoint preview">
+          <div class="viewer-header">
+            <strong>พรีวิวสไลด์</strong>
+            <span>ถ้าพรีวิวไม่ขึ้น ให้กดดาวน์โหลด PowerPoint ด้านบน</span>
+          </div>
+          <iframe
+            class="viewer"
+            title="Rice box packaging PowerPoint preview"
+            src="https://view.officeapps.live.com/op/embed.aspx?src=https%3A%2F%2Fraw.githubusercontent.com%2FBassSG%2Fpptx_rice_box%2Fmain%2Frice-box-packaging-options-th.pptx"
+            allowfullscreen
+          ></iframe>
+        </section>
+
+        <section class="notes" aria-label="Deck summary">
+          <article class="note">
+            <strong>ตัวเลือกแนะนำ</strong>
+            <p>เริ่มจาก PP 750 ml 2 ช่องเป็นกล่องหลัก แล้วใช้คราฟท์หรือชานอ้อยกับเมนูราคาสูงขึ้น</p>
+          </article>
+          <article class="note">
+            <strong>ต้นทุนที่ควรเผื่อ</strong>
+            <p>คิดเป็นแพ็กเต็มต่อออร์เดอร์ เช่น กล่อง ถ้วยน้ำจิ้ม ช้อน ถุง และสติกเกอร์</p>
+          </article>
+          <article class="note">
+            <strong>หมายเหตุราคา</strong>
+            <p>ข้อมูลราคาเช็กเมื่อ 15 มิถุนายน 2026 ควรตรวจซ้ำก่อนซื้อยกลังจริง</p>
+          </article>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
