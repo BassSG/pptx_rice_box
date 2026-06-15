@@ -4,7 +4,7 @@
 
 ## ดาวน์โหลดสไลด์
 
-- [rice-box-packaging-options-th.pptx](./rice-box-packaging-options-th.pptx)
+- [rice-box-packaging-options-menu-th.pptx](./rice-box-packaging-options-menu-th.pptx)
 
 ## เปิดตรวจบนเว็บ
 
